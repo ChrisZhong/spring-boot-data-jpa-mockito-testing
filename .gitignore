@@ -1,0 +1,20 @@
+# Java artifacts
+*.class
+
+# Gradle artifacts
+build/
+.gradle/
+
+# Eclipse artifacts
+bin/
+.classpath
+.project
+.refactorings/
+.settings/
+
+# Idea artifacts
+.idea/
+*.iml
+
+# OSX artifacts
+.DS_Store/
