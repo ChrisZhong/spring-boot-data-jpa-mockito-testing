@@ -43,6 +43,7 @@ public class PersonServiceTest {
     @Before
     public void before() {
         assertThat(mockingDetails(someBean).isMock(), is(true));
+        assertThat(mockingDetails(personService).isMock(), is(true));
     }
 
     @Test
