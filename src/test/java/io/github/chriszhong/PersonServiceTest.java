@@ -1,6 +1,5 @@
 package io.github.chriszhong;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,12 +37,14 @@ public class PersonServiceTest {
     @Inject
     private SomeBean someBean;
     @Inject
+    private PersonRepository personRepository;
+    @Inject
     private PersonService personService;
 
     @Before
     public void before() {
         assertThat(mockingDetails(someBean).isMock(), is(true));
-        assertThat(mockingDetails(personService).isMock(), is(true));
+        assertThat(mockingDetails(personRepository).isMock(), is(true));
     }
 
     @Test
